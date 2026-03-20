@@ -7,9 +7,10 @@
 
 body {
   background: #0d0d0d;
-  color: #fff;
+  color: #ffffff;
 }
 
+/* HERO (landing principal) */
 .hero {
   height: 100vh;
   display: flex;
@@ -26,23 +27,26 @@ body {
 
 .hero p {
   margin: 10px 0;
-  color: #aaa;
+  color: #aaaaaa;
 }
 
+/* BOTÃO */
 .btn {
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background: #00adb5;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 8px;
-  transition: 0.3s;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background: #008f95;
+  transform: scale(1.05);
 }
 
+/* SETA ANIMADA */
 .scroll-down {
   margin-top: 40px;
   font-size: 2rem;
@@ -50,11 +54,25 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(10px); }
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
+/* SOBRE */
 .about {
-  padding: 50px;
+  padding: 60px 20px;
   text-align: center;
+  background: #111;
+}
+
+.about h2 {
+  margin-bottom: 10px;
+}
+
+.about p {
+  color: #bbb;
 }
